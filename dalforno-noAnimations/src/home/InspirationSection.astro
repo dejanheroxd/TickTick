@@ -1,0 +1,23 @@
+---
+import grandma from "../assets/grandma-min.jpg";
+import { Image } from "astro:assets";
+import InspirationalText from "./InspirationalText";
+---
+
+<div class="lg:flex">
+  <div
+    class="h-[440px] lg:h-[720px] lg:py-8 bg-italia mt-4 lg:mt-0 flex justify-center lg:w-2/4"
+  >
+    <Image
+      width={280}
+      height={240}
+      src={grandma}
+      quality={"high"}
+      alt="old woman making pizza"
+      class="py-8 lg:w-[425px]"
+    />
+  </div>
+  <div class="flex flex-col justify-center items-center lg:w-2/4">
+    <InspirationalText client:visible />
+  </div>
+</div>

@@ -1,0 +1,44 @@
+---
+import tortellini from "../assets/tortellini.jpg";
+import somePizza from "../assets/somePizza.jpg";
+import rosemary from "../assets/rosemary.jpg";
+import { Image } from "astro:assets";
+import Hours from "./Hours";
+---
+
+<div class="2xl:pb-28 pb-20">
+  <div
+    class="flex justify-center md:pt-4 xl:pt-16 items-center w-full 2xl:pt-24"
+  >
+    <div class="xl:flex flex flex-col 2xl:flex-row 2xl:gap-x-10 gap-y-3">
+      <Image
+        src={tortellini}
+        width={750}
+        quality={50}
+        format="avif"
+        alt="picture of toretllini"
+      />
+      <Image
+        src={somePizza}
+        height={428}
+        quality={50}
+        format="avif"
+        alt="picture of pizza"
+      />
+    </div>
+  </div>
+  <div class="2xl:flex justify-center 2xl:pt-24 2xl:h-[600px] gap-x-10">
+    <!-- Hours -->
+    <Hours client:visible />
+    <!-- Hours -->
+    <div class="flex justify-center 2xl:justify-end 2xl:w-2/4">
+      <Image
+        src={rosemary}
+        height={500}
+        quality={40}
+        format="avif"
+        alt="picture of dish with wine and pizza"
+      />
+    </div>
+  </div>
+</div>

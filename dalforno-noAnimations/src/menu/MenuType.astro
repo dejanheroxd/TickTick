@@ -1,0 +1,172 @@
+---
+import Food from "./Food.astro";
+---
+
+<div class="flex flex-col justify-center items-center bg-white">
+  <div class="text-3xl font-serif text-italia pb-5 text-center">Antipasti</div>
+
+  <div class="text-center pb-12 xl:pb-20">
+    <span class="h-[1px] bg-black block w-9"></span>
+  </div>
+  <div
+    class="flex flex-col items-center justify-center lg:grid lg:justify-center lg:items-center w-full lg:grid-cols-2 xl:grid-cols-3"
+  >
+    <Food
+      foodName="Focaccia"
+      description="I’m a dish descriptionos. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Fried Calamari"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Fried Zucchini"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+      show={true}
+      veg={true}
+    />
+    <Food
+      foodName="Bruschetta di Pomodoro"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Shrimp Aglio olio"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Insalata Mista"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+      show={true}
+      veg={true}
+    />
+    <Food
+      foodName="Buffalo Mozzarella & Tomato"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+      center="true"
+    />
+  </div>
+  <!------------------- Pasta ---------------------------------->
+
+  <div class="text-3xl font-serif text-italia pb-5">Pasta</div>
+  <div class="text-center pb-12 xl:pb-20">
+    <span class="h-[1px] bg-black block w-9"></span>
+  </div>
+  <div
+    class="flex flex-col items-center justify-center lg:grid w-full lg:grid-cols-2 xl:grid-cols-3"
+  >
+    <Food
+      foodName="Pomodoro"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+      show={true}
+      veg={true}
+    />
+    <Food
+      foodName="Penne Arrabiata"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+      show={true}
+      spicy={true}
+    />
+    <Food
+      foodName="Gnocchi Quattro Formaggi"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Lasagna Bolognese"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Rigatoni"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Carbonara"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Schoko"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+      center="true"
+    />
+  </div>
+  <!------------------- Pizza ---------------------------------->
+  <div class="text-3xl font-serif text-italia pb-5">Pizza</div>
+  <div class="text-center pb-12 xl:pb-20">
+    <span class="h-[1px] bg-black block w-9"></span>
+  </div>
+  <div
+    class="flex flex-col items-center justify-center lg:grid w-full lg:grid-cols-2 xl:grid-cols-3"
+  >
+    <Food
+      foodName="Margherita"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+      show={true}
+      veg={true}
+    />
+    <Food
+      foodName="Arugula"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Bianca"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Funghi"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Capricciosa"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Siciliana"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+      show={true}
+      spicy={true}
+    />
+  </div>
+  <!------------------- Dolci ---------------------------------->
+  <div class="text-3xl font-serif text-italia pb-5">Dolci</div>
+  <div class="text-center pb-12">
+    <span class="h-[1px] bg-black block w-9"></span>
+  </div>
+  <div
+    class="flex flex-col items-center justify-center lg:grid w-full lg:grid-cols-2 xl:grid-cols-3"
+  >
+    <Food
+      foodName="Ice Cream"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Creme Brulee"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+    <Food
+      foodName="Tiramisu"
+      description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
+      price="9"
+    />
+  </div>
+</div>
