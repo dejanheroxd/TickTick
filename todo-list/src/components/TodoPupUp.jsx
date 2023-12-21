@@ -12,9 +12,9 @@ export default function TodoPupUp({ isPopUpActive, setPopUpActive }) {
     }
 
     if (isPopUpActive) {
-      document.addEventListener("mousedown", handleOutsideClick);
+      window.addEventListener("mousedown", handleOutsideClick);
     } else {
-      document.removeEventListener("mousedown", handleOutsideClick);
+      window.removeEventListener("mousedown", handleOutsideClick);
     }
 
     return () => {

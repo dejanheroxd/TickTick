@@ -5,7 +5,7 @@ import AddButton from "./AddButton";
 
 export default function AddComplete({ onHandlePopUpClick }) {
   return (
-    <div className="border border-red-500">
+    <div className="">
       <Todos />
       <Completed />
       <AddButton onHandlePopUpClick={onHandlePopUpClick} />
