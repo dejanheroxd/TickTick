@@ -1,5 +1,4 @@
-import { Check, CheckSquare, Trash } from "phosphor-react";
-import React, { useState } from "react";
+// ... (other imports and functions)
 
 export default function Todos({ todos, setTodos }) {
   function handleToggle(id) {
@@ -13,35 +12,30 @@ export default function Todos({ todos, setTodos }) {
     );
   }
 
+  function allCompleted() {
+    return todos.every((todo) => todo.completed);
+  }
+
   return (
-    <div className="bg-white mx-3 flex flex-col gap-y-5 rounded-[4px] p-3">
-      {todos.map((todo) => (
-        <div key={todo.id} className="flex items-center gap-x-3">
-          {todo.completed ? (
-            <Check
-              className="text-white rounded-[4px] bg-blue-500"
-              size={21}
-              onClick={() => handleToggle(todo.id)}
-              weight="fill"
-            />
-          ) : (
-            <button
-              onClick={() => handleToggle(todo.id)}
-              className="border-2 border-gray-300 rounded-[3px] p-2"
-            ></button>
+    <div>
+      {allCompleted() ? (
+        ""
+      ) : (
+        <div className="bg-white mx-3 flex flex-col gap-y-5 rounded-[4px] p-3">
+          {todos.map(
+            (todo) =>
+              !todo.completed && (
+                <div key={todo.id} className="flex items-center gap-x-3">
+                  <button
+                    onClick={() => handleToggle(todo.id)}
+                    className="border-2 border-gray-300 rounded-[3px] p-2"
+                  ></button>
+                  <p className="pb-[2px]">{todo.text}</p>
+                </div>
+              )
           )}
-          <div className="flex justify-between w-full">
-            <p
-              className={`${
-                todo.completed ? "text-gray-400" : "none"
-              } pb-[2px]`}
-            >
-              {todo.text}
-            </p>
-            <Trash className="text-gray-300" size={26} weight="bold" />
-          </div>
         </div>
-      ))}
+      )}
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function Completed({ todos }) {
         <p>Finished</p>
       </div>
       {todos.map((todo) => (
-        <div className="flex justify-between w-full">
+        <div key={todo.id} className="flex justify-between w-full">
           {todo.completed ? (
             <p
               className={`${
